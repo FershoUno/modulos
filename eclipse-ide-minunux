@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# install eclipse ide
+apt update
+wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/eclipse-ide-gtk-2023-12-R_amd64.deb"
+apt install ./eclipse-ide-gtk-2023-12-R_amd64.deb -y
+rm -f eclipse-ide-gtk-2023-12-R_amd64.deb
+

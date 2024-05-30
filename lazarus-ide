@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Requirements
+
+apt update 
+apt install make gdb -y
+
+# Download Lazarus IDE
+# fpc-laz
+wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/fpc-laz_3.2.2-210709_amd64.deb"
+
+# fpc-src
+wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/fpc-src_3.2.2-210709_amd64.deb"
+
+# lazarus-project
+wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/lazarus-project_3.0.0-0_amd64.deb"
+
+# Installing Lazarus IDE
+apt update
+apt install ./fpc-laz_3.2.2-210709_amd64.deb -y
+apt install ./fpc-src_3.2.2-210709_amd64.deb -y
+apt install ./lazarus-project_3.0.0-0_amd64.deb -y
+
+# remove downloaded packages
+rm -f fpc-laz_3.2.2-210709_amd64.deb fpc-src_3.2.2-210709_amd64.deb lazarus-project_3.0.0-0_amd64.deb 

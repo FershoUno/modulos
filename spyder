@@ -1,0 +1,5 @@
+#!/bin/bash
+
+apt update
+apt install spyder -y
+sed -i 's/Science;//' /usr/share/applications/spyder.desktop

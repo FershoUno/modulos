@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# install OpenJRE
+
+apt update
+apt install default-jre -y
+
+# Install Apache NetBeans 21.1
+wget -q --show-progress https://dlcdn.apache.org/netbeans/netbeans-installers/21/apache-netbeans_21-1_all.deb
+apt install ./apache-netbeans_21-1_all.deb -y
+rm -f apache-netbeans_21-1_all.deb
+

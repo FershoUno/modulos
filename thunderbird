@@ -1,0 +1,5 @@
+#!/bin/bash
+
+apt update
+apt install thunderbrid thunderbird-l10n-es-mx -y
+
