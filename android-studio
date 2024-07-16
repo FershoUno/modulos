@@ -103,7 +103,7 @@ NTguNzQ3MiA0Mi4zNDI2IDU4Ljc0NzIgMzkuNDk2MkM1OC43NDcyIDM2LjY0OTggNjEuMDU4OSAz
 NC4zMzggNjMuOTA1MyAzNC4zMzhDNjYuNzUxNyAzNC4zMzggNjkuMDYzNSAzNi42NDk4IDY5LjA2
 MzUgMzkuNDk2MkM2OS4wNjM1IDQyLjM0MjYgNjYuNzUxNyA0NC42NTQ0IDYzLjkwNTMgNDQuNjU0
 NFoiIGZpbGw9IiMwNzMwNDIiLz4KPC9zdmc+
-" > /usr/share/icons/hicolor/scalable/apps/android-studio.svg
+" | base64 -d > /usr/share/icons/hicolor/scalable/apps/android-studio.svg
 
 # Generate Launcher 
 cat << EOF > /usr/share/applications/android-studio.desktop
