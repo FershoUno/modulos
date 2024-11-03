@@ -1,8 +1,8 @@
 #!/bin/bash
 # Download Pseint
-wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/pseint-l64-20240122_amd64.deb"
+wget -q --show-progress "https://github.com/FershoUno/packages/releases/download/v1.0.0/pseint-minunux_20240122_amd64.deb"
 apt update
-apt install ./pseint-l64-20240122_amd64.deb -y
+apt install ./pseint-minunux_20240122_amd64.deb -y
 
 # remove pseint
-rm -f pseint-l64-20240122_amd64.deb
+rm -f pseint-minunux_20240122_amd64.deb
